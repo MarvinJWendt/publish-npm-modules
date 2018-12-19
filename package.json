@@ -1,0 +1,59 @@
+{
+  "name": "publish-npm-modules",
+  "displayName": "Publish NPM modules",
+  "description": "Simply publish NPM modules and push them to your GIT repo in a simple command.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "publish-npm-module.patch",
+        "title": "NPM: Publish PATCH (X.X.+1)"
+      },
+      {
+        "command": "publish-npm-module.minor",
+        "title": "NPM: Publish MINOR (X.+1.X)"
+      },
+      {
+        "command": "publish-npm-module.major",
+        "title": "NPM: Publish MAJOR (+1.X.X)"
+      },
+      {
+        "command": "publish-npm-module.withGit.patch",
+        "title": "NPM+GIT: Publish PATCH (X.X.+1)"
+      },
+      {
+        "command": "publish-npm-module.withGit.minor",
+        "title": "NPM+GIT: Publish MINOR (X.+1.X)"
+      },
+      {
+        "command": "publish-npm-module.withGit.major",
+        "title": "NPM+GIT: Publish MAJOR (+1.X.X)"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test",
+    "format": "./node_modules/.bin/prettier --write **/*",
+    "formatjs": "./node_modules/.bin/prettier --write **/*.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.10.25",
+    "eslint": "^4.19.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3",
+    "typescript": "^3.1.4",
+    "vscode": "^1.1.25"
+  }
+}
