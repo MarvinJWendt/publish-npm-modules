@@ -2,7 +2,7 @@
   "name": "publish-npm-modules",
   "displayName": "Publish NPM modules",
   "description": "Simply publish NPM modules and push them to your GIT repo in a simple command.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.30.0"
   },
