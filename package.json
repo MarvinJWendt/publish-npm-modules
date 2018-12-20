@@ -42,6 +42,10 @@
       }
     ]
   },
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/MarvinJWendt/publish-npm-modules"
+  },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test",

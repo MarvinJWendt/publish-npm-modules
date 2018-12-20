@@ -2,6 +2,11 @@
 
 All notable changes to the "publish-npm-modules" extension will be documented in this file.
 
-## 1.0.0
+### 1.1.0
 
-- Initial release
+- Better documentation
+- Code cleanup
+
+### 1.0.0
+
+Initial release
